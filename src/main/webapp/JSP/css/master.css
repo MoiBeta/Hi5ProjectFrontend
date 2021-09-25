@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0px; /*margenes cuatro lados */
+    padding: 0px; /*margenes entre imagenes*/
+    background: url(../img/fondovioleta.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 420px;
+    height: 50px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 300px 50px; /*70 arriba,30 lados*/
+}
+.login-box .avatar{
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% -50px)
+}
+.login-box h1{
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+
+}
+.login-box label{
+    margin: 0;
+    padding: 0;   
+    display: block;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+.login-box input[type="text"]{
+    border: none;
+    border-bottom: 1px solid ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+#ingreso{
+    border-color: blueviolet;
+}
+#cancelar{
+    border-color: blueviolet;
+}
