@@ -10,7 +10,7 @@
     <title>Hi5tronix</title>
     <!-- Bootstrap CSS para aplicar diseño a el formulario -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="JSP/css/estilo.css" />
     <link rel="icon" href="JSP/img/logo.ico"/>
 </head>
 
@@ -30,22 +30,22 @@
             <div class="collapse navbar-collapse " id="menuPrincipal ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="usuario.jsp">Usuarios</a>
+                        <a class="nav-link " href="JSP/usuario.jsp">Usuarios</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Clientes</a>
+                        <a class="nav-link " href="JSP/Clientes.jsp">Clientes</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Proveedores</a>
+                        <a class="nav-link " href="JSP/Proveedores.jsp">Proveedores</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Productos</a>
+                        <a class="nav-link " href="JSP/Productos.jsp">Productos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Ventas</a>
+                        <a class="nav-link " href="JSP/Ventas.jsp">Ventas</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Reportes</a>
+                        <a class="nav-link " href="JSP/Reportes.jsp">Reportes</a>
                     </li>
                 </ul>
             </div>
