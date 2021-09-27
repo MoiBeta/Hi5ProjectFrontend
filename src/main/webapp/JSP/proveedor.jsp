@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios</title>
+    <title>Proveedores</title>
     <!-- Bootstrap CSS para aplicar diseño a el formulario -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="icon" href="img/logo.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 </head>
 
 
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse " id="menuPrincipal ">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
-                        <a class="nav-link active " href="#usua ">Usuarios</a>
+                        <a class="nav-link " href="usuario.jsp">Usuarios</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="clientes.jsp">Clientes</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="proveedor.jsp">Proveedores</a>
+                        <a class="nav-link active " href="#prove">Proveedores</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="# ">Productos</a>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-    <section id="usua ">
+    <section id="prove">
         <div class="d-flex">
             <div class="card col-sm-4" style="border:none;">
                 <div class="card-body">
@@ -61,34 +61,33 @@
                         <h1 style="color: grey; "></h1>
 
                         <div class="mb-3 row ">
-                            <label class="col-sm-3 col-form-label ">Cedula</label>
+                            <label class="col-sm-3 col-form-label ">NIT</label>
                             <div class="col-sm-8">
-                                <input type="number " class="form-control " placeholder="1234578956 " required>
+                                <input type="number " class="form-control " placeholder="123" required>
                             </div>
                         </div>
-                        <div class="mb-3 row ">
-                            <label class="col-sm-3 col-form-label ">Usuario</label>
-                            <div class="col-sm-8">
-                                <input type="text " class="form-control " placeholder="User Name " required>
-                            </div>
-                        </div>
-
                         <div class="mb-3 row ">
                             <label class="col-sm-3 col-form-label ">Nombre</label>
                             <div class="col-sm-8">
-                                <input type="text " class="form-control " placeholder="Ingrese su nombre " required>
+                                <input type="text " class="form-control " placeholder="Nombre del producto" required>
                             </div>
                         </div>
                         <div class="mb-3 row ">
-                            <label class="col-sm-3 col-form-label ">Password</label>
+                            <label class="col-sm-3 col-form-label ">Dirección</label>
                             <div class="col-sm-8">
-                                <input type="password " class="form-control " placeholder="Password " required>
+                                <input type="text" class="form-control " placeholder="CRRA 13B" required>
                             </div>
                         </div>
                         <div class="mb-3 row ">
-                            <label class="col-sm-3 col-form-label ">Email</label>
+                            <label class="col-sm-3 col-form-label ">Teléfono</label>
                             <div class="col-sm-8">
-                                <input type="email " class="form-control " placeholder="correo@hotmail.com " required>
+                                <input type="number" class="form-control " placeholder="313852651" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row ">
+                            <label class="col-sm-3 col-form-label ">Ciudad</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control " placeholder="celularcitos@sanandresito.com" required>
                             </div>
                         </div>
                         <button type="button " class="btn btn-secondary align-bottom" id="boton2">Crear</button>
@@ -102,19 +101,21 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Cedula</th>
-                            <th>Nombre Completo</th>
-                            <th>Usuario</th>
-                            <th>Correo Electronico</th>
+                            <th>NIT</th>
+                            <th>Nombre</th>
+                            <th>Dirección</th>
+                            <th>Telefono</th>
+                            <th>Ciudad</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Maria Ejemplo</td>
-                            <td>maria.eje</td>
-                            <td>maria@gmail.com</td>
+                            <td>13451</td>
+                            <td>Celularcitos</td>
+                            <td>Cll 13b </td>
+                            <td>3138587372</td>
+                            <td>Bogota D.C.</td>
                             <td>
                                 <!--boton Actualizar-->
                                 <a class="btn btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
@@ -130,9 +131,6 @@
     </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
-<!--Data Tables-->
-<script type="text/javascript" src="./DataTables/datatables.min.js"></script>
 
-</html>
 
 </html>
