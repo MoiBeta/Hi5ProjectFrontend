@@ -10,8 +10,8 @@
     <title>Hi5tronix</title>
     <!-- Bootstrap CSS para aplicar diseño a el formulario -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="JSP/css/estilo.css" />
-    <link rel="icon" href="JSP/img/logo.ico"/>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="icon" href="./img/logo.ico"/>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <!--Jumbotron -->
 
         <h1 id=encabezado>
-            <a class=" nav-link active " href="#home " style="color:#ffffff; "><img id="logox" src="JSP/img/logo.png"> Hi5Tronix
+            <a class=" nav-link active " href="#home " style="color:#ffffff; "><img id="logox" src="./img/logo.png"> Hi5Tronix
             </a>
         </h1>
     </div>
@@ -30,22 +30,22 @@
             <div class="collapse navbar-collapse " id="menuPrincipal ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="JSP/usuario.jsp">Usuarios</a>
+                        <a class="nav-link " href="./usuario.jsp">Usuarios</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="JSP/Clientes.jsp">Clientes</a>
+                        <a class="nav-link " href="./Clientes.jsp">Clientes</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="JSP/Proveedores.jsp">Proveedores</a>
+                        <a class="nav-link " href="./proveedor.jsp">Proveedores</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="JSP/Productos.jsp">Productos</a>
+                        <a class="nav-link " href="./Productos.jsp">Productos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="JSP/Ventas.jsp">Ventas</a>
+                        <a class="nav-link " href="./Ventas.jsp">Ventas</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="JSP/Reportes.jsp">Reportes</a>
+                        <a class="nav-link " href="./Reportes.jsp">Reportes</a>
                     </li>
                 </ul>
             </div>
@@ -55,19 +55,19 @@
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="JSP/img/tecno.jpg" alt="Primer slide">
+                    <img class="d-block w-100" src="./img/tecno.jpg" alt="Primer slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="JSP/img/chips.png" alt="Segundo slide">
+                    <img class="d-block w-100" src="./img/chips.png" alt="Segundo slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="JSP/img/idea.jpg" alt="Tercero slide">
+                    <img class="d-block w-100" src="./img/idea.jpg" alt="Tercero slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="JSP/img/idea2.jpg" alt="Cuarto slide">
+                    <img class="d-block w-100" src="./img/idea2.jpg" alt="Cuarto slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="JSP/img/tecnologia.jpg" alt="Cuarto slide">
+                    <img class="d-block w-100" src="./img/tecnologia.jpg" alt="Cuarto slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
@@ -82,7 +82,7 @@
     </section id="tarjetas">
     <div class="d-flex flex-wrap flex-row-reverse">
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="JSP/img/chips.png" alt="Responsive image">
+            <img class="card-img-top" src="./img/chips.png" alt="Responsive image">
             <div class="card-body">
                 <h5 class="card-title">CHIP</h5>
 
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="JSP/img/idea.jpg" alt="Responsive image">
+            <img class="card-img-top" src="./img/idea.jpg" alt="Responsive image">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratís">Nombre</h5>
                 <h6 class="card-subtitle text-muted">Nombre del producto</h6>
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="JSP/img/idea2.jpg" alt="Responsive image">
+            <img class="card-img-top" src="./img/idea2.jpg" alt="Responsive image">
             <div class="card-body">
                 <h5 class="card-title">Nombre </h5>
                 <h6 class="card-subtitle text-muted">Caracteristica</h6>
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="JSP/img/idea.jpg" alt="Responsive image">
+            <img class="card-img-top" src="./img/idea.jpg" alt="Responsive image">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratís">Nombre</h5>
                 <h6 class="card-subtitle text-muted">Nombre del producto</h6>
@@ -129,7 +129,7 @@
         <!--Otra tarjeta-->
         <div class="d-flex flex-wrap flex-row-reverse">
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                <img class="card-img-top" src="JSP/img/chips.png" alt="Responsive image">
+                <img class="card-img-top" src="./img/chips.png" alt="Responsive image">
                 <div class="card-body">
                     <h5 class="card-title">CHIP</h5>
 
@@ -143,7 +143,7 @@
 
 
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                <img class="card-img-top" src="JSP/img/idea.jpg" alt="Responsive image">
+                <img class="card-img-top" src="./img/idea.jpg" alt="Responsive image">
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratís">Nombre</h5>
                     <h6 class="card-subtitle text-muted">Nombre del producto</h6>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                <img class="card-img-top" src="JSP/img/idea2.jpg" alt="Responsive image">
+                <img class="card-img-top" src="./img/idea2.jpg" alt="Responsive image">
                 <div class="card-body">
                     <h5 class="card-title">Nombre</h5>
                     <h6 class="card-subtitle text-muted">Caracteristica</h6>
@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                <img class="card-img-top" src="JSP/img/idea.jpg" alt="Responsive image">
+                <img class="card-img-top" src="./img/idea.jpg" alt="Responsive image">
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratís">Nombre</h5>
                     <h6 class="card-subtitle text-muted">Nombre del producto</h6>

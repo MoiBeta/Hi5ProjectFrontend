@@ -35,19 +35,19 @@
                         <a class="nav-link " href="usuario.jsp">Usuarios</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="clientes.jsp">Clientes</a>
+                        <a class="nav-link " href="Cliente.jsp">Clientes</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link active " href="#prove">Proveedores</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Productos</a>
+                        <a class="nav-link " href="Productos.jsp">Productos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Ventas</a>
+                        <a class="nav-link " href="Ventas.jsp">Ventas</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Reportes</a>
+                        <a class="nav-link " href="Reportes.jsp">Reportes</a>
                     </li>
                 </ul>
             </div>
