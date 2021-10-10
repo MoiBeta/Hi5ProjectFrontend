@@ -4,7 +4,7 @@
 <html lang="es"> <!--abre archivo html-->
     <head>
         <meta charset="utf-8"> <!--codigo visualizar cáracteres especiles-->
-        <title>Mi Tienda Generica </title> <!--nombre pestaña-->
+        <title>Hi5Tronix</title> <!--nombre pestaña-->
         <link rel="stylesheet" href="css/master.css"> <!--busca archivo, dirección css-->
         <link rel="icon" href="img/logoico.ico">
     </head>

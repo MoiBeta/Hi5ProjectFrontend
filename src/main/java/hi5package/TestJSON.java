@@ -18,7 +18,11 @@ import org.json.simple.parser.ParseException;
 public class TestJSON {
 	private static URL url;
 	private static String sitio = "http://localhost:5000/";
-
+	
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	// Modulo Usuarios
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	
 	//agregar informacion a la tabla usuario
 	
 	public static ArrayList<Usuarios> parsingUsuarios(String json) throws ParseException {//devulve un arraylist
@@ -41,7 +45,7 @@ public class TestJSON {
 	
 	
 	//listar la informacion
-	public static ArrayList<Usuarios> getJSON() throws IOException, ParseException { //devolver un listado JSON
+	public static ArrayList<Usuarios> getJSONUsuarios() throws IOException, ParseException { //devolver un listado JSON
 
 		url = new URL(sitio + "usuarios/listar"); //trae el metodo de Usuarios.API 
 		HttpURLConnection http = (HttpURLConnection) url.openConnection();
@@ -63,6 +67,35 @@ public class TestJSON {
 		return lista;
 	}
 
+	//Listar información temporal
+	public static ArrayList<Usuarios> getJSONUsuarios(Long id) throws IOException, ParseException { // devolver un listado JSON
+
+		url = new URL(sitio + "usuarios/listar"); // trae el metodo de Usuarios.API
+		HttpURLConnection http = (HttpURLConnection) url.openConnection();
+
+		http.setRequestMethod("GET");
+		http.setRequestProperty("Accept", "application/json");
+
+		InputStream respuesta = http.getInputStream();
+		byte[] inp = respuesta.readAllBytes();
+		String json = "";
+
+		for (int i = 0; i < inp.length; i++) {
+			json += (char) inp[i];
+		}
+		ArrayList<Usuarios> listaTemp = new ArrayList<Usuarios>();
+		ArrayList<Usuarios> lista = new ArrayList<Usuarios>();
+		listaTemp = parsingUsuarios(json);
+
+		for (Usuarios usuario : listaTemp) {
+			if (usuario.getCedula_usuario() == id) {
+				lista.add(usuario);
+			}
+		}
+		http.disconnect();
+		return lista;
+	}
+	
 	public static int postJSON(Usuarios usuario) throws IOException {
 
 		url = new URL(sitio + "usuarios/guardar");
@@ -80,12 +113,63 @@ public class TestJSON {
 		http.setRequestProperty("Content-Type", "application/json");
 
 		String data = "{" + "\"cedula_usuario\":\"" + String.valueOf(usuario.getCedula_usuario())
-				+ "\",\"email_usuario\": \"" + usuario.getEmail_usuario() + "\",\"nombre_usuario\": \""
-				+ usuario.getNombre_usuario() + "\",\"password\":\"" + usuario.getPassword() + "\",\"usuario\":\""
-				+ usuario.getUsuario() + "\"}";
+						  + "\",\"email_usuario\": \"" + usuario.getEmail_usuario() 
+						  + "\",\"nombre_usuario\": \"" + usuario.getNombre_usuario() 
+						  + "\",\"password\":\"" + usuario.getPassword() 
+						  + "\",\"usuario\":\"" + usuario.getUsuario() + "\"}";
 		byte[] out = data.getBytes(StandardCharsets.UTF_8);
 		OutputStream stream = http.getOutputStream();
 		stream.write(out);
+
+		int respuesta = http.getResponseCode();
+		http.disconnect();
+		return respuesta;
+	}
+	
+	public static int putJSON(Usuarios usuario, Long id) throws IOException {
+		url = new URL(sitio + "usuarios/actualizar");
+		HttpURLConnection http;
+		http = (HttpURLConnection) url.openConnection();
+		
+		try {
+			http.setRequestMethod("PUT");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		http.setDoOutput(true);
+		http.setRequestProperty("Accept", "application/json");
+		http.setRequestProperty("Content-Type", "application/json");
+		
+		String data = "{" + "\"cedula_usuario\":\"" + String.valueOf(usuario.getCedula_usuario())
+						  + "\",\"email_usuario\": \"" + usuario.getEmail_usuario() 
+						  + "\",\"nombre_usuario\": \""+ usuario.getNombre_usuario() 
+						  + "\",\"password\":\"" + usuario.getPassword() 
+						  + "\",\"usuario\":\"" + usuario.getUsuario() + "\"}";
+		byte[] out = data.getBytes(StandardCharsets.UTF_8);
+		OutputStream stream = http.getOutputStream();
+		stream.write(out);
+
+		int respuesta = http.getResponseCode();
+		http.disconnect();
+		return respuesta;
+	}
+	
+	public static int deleteJSONUsuarios(Long id) throws IOException {
+
+		url = new URL(sitio + "usuarios/eliminar/" + id);
+		HttpURLConnection http;
+		http = (HttpURLConnection) url.openConnection();
+
+		try {
+			http.setRequestMethod("DELETE");
+		} catch (ProtocolException e) {
+			e.printStackTrace();
+		}
+
+		http.setDoOutput(true);
+		http.setRequestProperty("Accept", "application/json");
+		http.setRequestProperty("Content-Type", "application/json");
 
 		int respuesta = http.getResponseCode();
 		http.disconnect();

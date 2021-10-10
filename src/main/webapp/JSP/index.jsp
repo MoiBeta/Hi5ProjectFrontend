@@ -30,22 +30,22 @@
             <div class="collapse navbar-collapse " id="menuPrincipal ">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="./usuario.jsp">Usuarios</a>
+                        <a class="nav-link " href="usuario.jsp">Usuarios</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="./Clientes.jsp">Clientes</a>
+                        <a class="nav-link " href="Clientes.jsp">Clientes</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="./proveedor.jsp">Proveedores</a>
+                        <a class="nav-link " href="proveedor.jsp">Proveedores</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="./Productos.jsp">Productos</a>
+                        <a class="nav-link " href="Productos.jsp">Productos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="./Ventas.jsp">Ventas</a>
+                        <a class="nav-link " href="Ventas.jsp">Ventas</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="./Reportes.jsp">Reportes</a>
+                        <a class="nav-link " href="Reportes.jsp">Reportes</a>
                     </li>
                 </ul>
             </div>
@@ -55,19 +55,19 @@
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./img/tecno.jpg" alt="Primer slide">
+                    <img class="d-block w-100" src="img/tecno.jpg" alt="Primer slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/chips.png" alt="Segundo slide">
+                    <img class="d-block w-100" src="img/chips.png" alt="Segundo slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/idea.jpg" alt="Tercero slide">
+                    <img class="d-block w-100" src="img/idea.jpg" alt="Tercero slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/idea2.jpg" alt="Cuarto slide">
+                    <img class="d-block w-100" src="img/idea2.jpg" alt="Cuarto slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/tecnologia.jpg" alt="Cuarto slide">
+                    <img class="d-block w-100" src="img/tecnologia.jpg" alt="Cuarto slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
