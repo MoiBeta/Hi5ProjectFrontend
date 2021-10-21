@@ -10,6 +10,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.websocket.ClientEndpoint;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -126,7 +128,7 @@ public class TestJSON {
 		return respuesta;
 	}
 	
-	public static int putJSON(Usuarios usuario, Long id) throws IOException {
+	public static int putJSON(Usuarios usuario) throws IOException {
 		url = new URL(sitio + "usuarios/actualizar");
 		HttpURLConnection http;
 		http = (HttpURLConnection) url.openConnection();

@@ -28,8 +28,6 @@
 
             <input id="ingreso" type="submit" value="Ingresar" name= "accion"> <!--boton acceso-->
             <input id="cancelar" type="submit" value="Cancelar">
-            <a href="#">Perdí Mi Contraseña</a>
-            <a href="#">No Tengo Cuenta</a>
 
             
         </form>

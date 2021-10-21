@@ -7,6 +7,7 @@ public class Usuarios {
 	private String nombre_usuario;
 	private String password;
 	private String usuario;
+
 	public long getCedula_usuario() {
 		return cedula_usuario;
 	}
@@ -37,5 +38,19 @@ public class Usuarios {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-
+	
+	public Usuarios(long cedula_usuario, String nombre_usuario, String email_usuario, String usuario, String password) {
+		super();
+		this.cedula_usuario = cedula_usuario;
+		this.email_usuario = email_usuario;
+		this.nombre_usuario = nombre_usuario;
+		this.password = password;
+		this.usuario = usuario;
+	}
+	
+	public Usuarios() {
+		super();
+	}
+	
+	
 }
